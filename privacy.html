@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SaveGPS プライバシーポリシー</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #57606a;
+    --line: #d0d7de;
+    --accent: #0f766e;
+    --note-bg: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --line: #30363d;
+      --accent: #2dd4bf;
+      --note-bg: #161b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 .5rem; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 .75rem;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; }
+  .meta { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  ul { padding-left: 1.4rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  .note {
+    background: var(--note-bg);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    padding: .9rem 1.1rem;
+    margin: 1.25rem 0;
+    border-radius: 4px;
+    font-size: .95rem;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .95rem; }
+  th, td { border: 1px solid var(--line); padding: .6rem .75rem; text-align: left; vertical-align: top; }
+  th { background: var(--note-bg); font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  code { background: var(--note-bg); padding: .1rem .35rem; border-radius: 3px; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>SaveGPS プライバシーポリシー</h1>
+<p class="meta">制定日: 2026年8月17日 / 最終更新: 2026年9月3日</p>
+<p class="meta"><a href="privacy-en.html">English</a></p>
+
+<p>
+夜凪製作所（Yonagi Seisakusho）（以下「当方」といいます）は、Android アプリ「SaveGPS」（以下「本アプリ」といいます）における
+利用者の情報の取り扱いについて、以下のとおり定めます。
+</p>
+
+<h2>1. はじめに</h2>
+<p>
+本アプリは、利用者が操作した時点の現在地を記録するためのアプリです。
+本アプリは利用者登録を必要とせず、氏名・メールアドレス・電話番号などの個人を直接特定する情報を収集しません。
+</p>
+
+<h2>2. 本アプリが端末内に保存する情報</h2>
+<p>利用者が保存操作を行ったとき、本アプリは以下の情報を端末内のデータベースに記録します。</p>
+<ul>
+  <li>緯度および経度</li>
+  <li>位置情報の精度（メートル単位の誤差）</li>
+  <li>保存した日時</li>
+  <li>逆ジオコーディングにより取得した住所の文字列</li>
+  <li>利用者が入力したメモ</li>
+  <li>削除防止（ロック）の設定状態</li>
+</ul>
+<p>
+これらは本アプリの機能を提供するためにのみ利用します。
+当方はこれらの情報を当方のサーバー等へ送信しておらず、閲覧することもできません。
+</p>
+
+<h2>3. 外部へ送信される情報</h2>
+<p>本アプリの機能を提供するため、以下の場合に情報が外部へ送信されます。</p>
+
+<h3>3-1. 住所の取得</h3>
+<p>
+記録した地点の住所を表示するため、Android が提供する逆ジオコーディング機能（Geocoder）を利用しています。
+この処理により、<strong>保存のたびに緯度・経度が Google に送信されます</strong>。
+取得された住所の文字列は端末内にのみ保存されます。
+</p>
+
+<h3>3-2. 位置情報の取得</h3>
+<p>
+現在地の取得には Google Play 開発者サービスの位置情報機能を利用しています。
+位置情報の測定にあたり、同サービスが周辺の通信環境に関する情報を利用する場合があります。
+</p>
+
+<h3>3-3. 広告の配信</h3>
+<p>
+本アプリの無料版では、Google の広告配信サービス「Google AdMob」を利用して広告を表示します。
+AdMob は広告の配信および効果測定のため、広告識別子（広告 ID）、端末に関する情報、
+IP アドレス等を収集する場合があります。これらの情報の取り扱いは Google のプライバシーポリシーに従います。
+</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a></li>
+</ul>
+<p>
+広告 ID のリセットやパーソナライズ広告の無効化は、端末の設定から利用者自身で行うことができます。
+有料版（Pro 版）を購入した場合、広告は表示されません。
+</p>
+
+<h3>3-4. EEA・英国・スイスにおける広告の同意</h3>
+<p>
+欧州経済領域（EEA）・英国・スイスにお住まいの場合、本アプリは Google の
+User Messaging Platform を用いて、広告を読み込む前に同意フォームを表示し、
+そこでの選択に従ってのみ広告をリクエストします。
+</p>
+<div class="note">
+  選択内容は、アプリ内の<strong>「設定」→「広告のプライバシー設定」</strong>からいつでも
+  確認・撤回できます。この項目は、該当する地域でのみ表示されます。
+</div>
+
+<h3>3-5. 課金処理</h3>
+<p>
+有料版の購入手続きは Google Play の課金システムを通じて行われます。
+決済に関する情報は Google が取り扱い、<strong>当方はクレジットカード番号等の決済情報を受け取りません</strong>。
+本アプリは購入の有無を確認するための情報を端末内に保持します。
+</p>
+
+<h2>4. バックアップについて</h2>
+<p>
+本アプリは Android の自動バックアップ機能に対応しています。
+これにより、<strong>保存された位置情報の履歴が利用者自身の Google アカウントのバックアップ領域に保存されます</strong>。
+機種変更や端末の初期化を行った際に履歴を引き継ぐためのものです。
+</p>
+<div class="note">
+  このバックアップは利用者自身の Google アカウントに保存されるものであり、<strong>当方が参照することはできません</strong>。
+  また Android 9 以降では、端末の画面ロック（PIN・パターン・パスワード）を鍵として暗号化されます。
+  バックアップが不要な場合は、端末の「設定」からアプリごとにバックアップを無効にすることができます。
+</div>
+<p>
+なお、購入状態に関する情報はバックアップおよび端末間の直接転送の対象から除外しています。
+</p>
+
+<h2>5. 利用者の操作による共有</h2>
+<p>
+本アプリには、記録した地点をテキストとして他のアプリへ共有する機能があります。
+この機能は<strong>利用者が明示的に共有操作を行った場合にのみ動作し</strong>、送信先のアプリは利用者が選択します。
+共有される内容（住所・座標・メモを含めるかどうか）は設定画面で変更できます。
+共有後の情報の取り扱いは、送信先のアプリまたはサービスの定めに従います。
+</p>
+
+<h2>6. 本アプリが利用する権限</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>権限</th><th>利用目的</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>位置情報（正確な位置情報 / おおよその位置情報）</td>
+      <td>利用者の操作時に現在地を取得し記録するため。バックグラウンドで継続的に位置情報を取得することはありません</td>
+    </tr>
+    <tr>
+      <td>インターネット接続</td>
+      <td>住所の取得および広告の配信のため</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>
+位置情報の権限は、利用者が「正確な位置情報」ではなく「おおよその位置情報」のみを許可することもできます。
+その場合、記録される位置の誤差が大きくなります（およそ 1km 程度）。
+権限はいつでも端末の設定から取り消すことができます。
+</p>
+
+<h2>7. 保存期間と削除の方法</h2>
+<ul>
+  <li>記録された情報は、利用者が削除するか本アプリをアンインストールするまで端末内に保存されます</li>
+  <li>個々の記録は、アプリ内で長押しして選択し削除できます</li>
+  <li>すべての情報を削除したい場合は、本アプリをアンインストールしてください</li>
+  <li>Google アカウントのバックアップに保存された情報の削除については、Google の提供する手段に従ってください</li>
+</ul>
+
+<h2>8. 解析ツールについて</h2>
+<p>
+本アプリは、利用状況の解析ツールおよびクラッシュ情報の収集ツールを<strong>一切組み込んでいません</strong>。
+</p>
+
+<h2>9. 子どものプライバシー</h2>
+<p>
+本アプリは子どもを対象としたアプリではありません。
+13歳未満の子どもから意図的に情報を収集することはありません。
+</p>
+
+<h2>10. 本ポリシーの変更</h2>
+<p>
+本ポリシーの内容は、法令の変更や本アプリの機能追加に応じて変更されることがあります。
+重要な変更を行う場合は、本ページ上でお知らせします。
+</p>
+
+<h2>11. お問い合わせ</h2>
+<p>
+本ポリシーおよび本アプリにおける情報の取り扱いに関するお問い合わせは、以下までご連絡ください。
+</p>
+<p>
+<a href="mailto:yonagikei.act0515@gmail.com">yonagikei.act0515@gmail.com</a>
+</p>
+
+<h2>12. 事業者情報</h2>
+<table>
+<tr><th>事業者名</th><td>夜凪製作所（Yonagi Seisakusho）</td></tr>
+<tr><th>運営責任者</th><td>平川 康平（Kohei Hirakawa）</td></tr>
+<tr><th>所在地</th><td>〒150-0043<br>東京都渋谷区道玄坂1丁目10番8号 渋谷道玄坂東急ビル2F-C</td></tr>
+<tr><th>連絡先</th><td><a href="mailto:yonagikei.act0515@gmail.com">yonagikei.act0515@gmail.com</a></td></tr>
+</table>
+
+<footer>
+  SaveGPS Privacy Policy — 制定日 2026年8月17日
+</footer>
+
+</main>
+</body>
+</html>
